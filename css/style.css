@@ -3,6 +3,7 @@
     --secondary-color: #f99500;
     --light-color: #f3f3f3;
     --dark-color: #333;
+    --white-color: #fff;
     --max-width: 1100px;
 }
 
@@ -63,7 +64,7 @@ h6 {
 
 .category {
     display: inline-block;
-    color: #fff;
+    color: var(--white-color);
     font-size: .55rem;
     text-transform: uppercase;
     padding: 0.4rem 0.6rem;
@@ -87,7 +88,7 @@ h6 {
     display: inline-block;
     border: none;
     background-color: var(--dark-color);
-    color: #fff;
+    color: var(--white-color);
     padding: .5rem 1.5rem;
 }
 
@@ -118,15 +119,75 @@ h6 {
 }
 
 .card {
-    background-color: #fff;
+    background-color: var(--white-color);
     padding: 1rem;
 }
+
+.bg-dark {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a {
+    color: var(--white-color);
+}
+
+
+/* Padding class */
+
+.py-1 {
+    padding: 1.5rem 1.5rem;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+.p-1 {
+    padding: 1.5rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+
+/* ------------MAIN STYLES STARTS------------ */
 
 
 /* Navbar */
 
 #main-nav {
-    background: #fff;
+    background: var(--white-color);
     position: sticky;
     top: 0;
     z-index: 2;
@@ -156,7 +217,7 @@ h6 {
 
 #main-nav ul li a.current {
     background: var(--primary-color);
-    color: #fff;
+    color: var(--white-color);
 }
 
 #main-nav ul li a:hover {
@@ -177,7 +238,7 @@ h6 {
 /* Showcase */
 
 #showcase {
-    color: #fff;
+    color: var(--white-color);
     background: var(--dark-color);
     padding: 2rem;
     position: relative;
