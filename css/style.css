@@ -154,6 +154,10 @@ h6 {
     color: var(--white-color);
 }
 
+.l-heading {
+    font-size: 2.5rem;
+}
+
 
 /* Padding class */
 
@@ -181,6 +185,27 @@ h6 {
     padding: 3rem;
 }
 
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed black;
+    margin-bottom: 0.75rem;
+    width: 80%;
+}
+
+
+/* Innerpage container */
+
+.page-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    margin: 2rem 0;
+    grid-gap: 1rem;
+}
+
+.page-container>*:first-child {
+    grid-row: 1 / span 3;
+}
+
 
 /* ------------MAIN STYLES STARTS------------ */
 
@@ -192,6 +217,7 @@ h6 {
     position: sticky;
     top: 0;
     z-index: 2;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 #main-nav .container {
@@ -294,15 +320,23 @@ h6 {
     grid-column: 2/-1;
 }
 
+#article .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-color);
+    padding: 0.55rem 0.5rem;
+}
+
+#article .meta .category {
+    margin-top: 0.4rem;
+}
+
 
 /* Footer */
 
 footer {
     background: #333;
-}
-
-#footer .logo {
-    width: 180px;
 }
 
 #footer-content {
@@ -323,3 +357,19 @@ footer {
 .fourth {
     color: var(--white-color);
 }
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.3rem;
+}
+
+.form-group .btn-primary {
+    text-align: center;
+    width: 100%;
+}
+
+
+/* --------------------- */
+
+
+/* About.html */
